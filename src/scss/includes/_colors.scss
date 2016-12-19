@@ -1,0 +1,8 @@
+$basic-color: blue;
+$background-color: grey;
+$header-background: lightblue;
+$image-background: darken($header-background, 6%);
+$button-color: teal;
+
+$track-color: $button-color !default;
+$thumb-color: lighten($button-color, 8%) !default;

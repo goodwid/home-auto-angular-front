@@ -1,0 +1,17 @@
+@import 'colors';
+@import 'slider';
+
+a {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: .3em;
+  border-radius: .5em;
+  margin: .3em;
+  background: $button-color;
+  color: white;
+  text-align: center;
+}
+
+#fireplace-status-display {
+  border: 1px solid black;
+}
