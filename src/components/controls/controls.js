@@ -10,6 +10,5 @@ controller.$inject = ['userService'];
 
 function controller(userService) {
   this.style = style;
-  console.log('controls loaded');
   this.logout = () => userService.logout();
 }

@@ -11,10 +11,10 @@ controller.$inject = ['fireplaceService'];
 
 function controller(fpService) {
   this.style = style;
+  this.timeout = 25;
   this.on = () => {
     fpService.on()
       .then(status => {
-        console.log('status: ', status);
         this.statusDisplay = status.message;
       })
       .catch(err => console.error(err));
@@ -22,7 +22,6 @@ function controller(fpService) {
   this.off = () => {
     fpService.off()
       .then(status => {
-        console.log('status: ', status);
         this.statusDisplay = status.message;
       })
       .catch(err => console.error(err));
@@ -30,7 +29,6 @@ function controller(fpService) {
   this.status = () => {
     fpService.status()
       .then(status => {
-        console.log('status: ', status);
         this.statusDisplay = status.message;
       })
       .catch(err => console.error(err));
@@ -41,12 +39,8 @@ function controller(fpService) {
     };
     fpService.timer(data)
       .then(status => {
-        console.log('status: ', status);
         this.statusDisplay = status.message;
       })
       .catch(err => console.error(err));
   };
-
-  console.log('fp loaded');
-
 }

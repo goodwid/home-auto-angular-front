@@ -1,8 +1,9 @@
 $basic-color: blue;
-$background-color: grey;
-$header-background: lightblue;
+$background-color: lightblue;
+$header-background: lighten($background-color, 6%);
+$footer-background: darken($background-color, 15%);
 $image-background: darken($header-background, 6%);
-$button-color: teal;
+$button-color: #b01520;
 
 $track-color: $button-color !default;
 $thumb-color: lighten($button-color, 8%) !default;

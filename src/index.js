@@ -1,4 +1,3 @@
-import angular from 'angular';
 import app from './homeAuto';
 import './scss/main.scss';
 import routes from './routes';

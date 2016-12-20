@@ -1,0 +1,11 @@
+@import 'colors';
+
+:local(footer) {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  bottom: 20px;
+  background-color: $footer-background;
+  margin: 0;
+  padding: 0;
+}
