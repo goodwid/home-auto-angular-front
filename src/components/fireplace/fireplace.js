@@ -29,7 +29,7 @@ function controller(fpService) {
   this.status = () => {
     fpService.status()
       .then(status => {
-        this.statusDisplay = status.message;
+        this.statusDisplay = status.message + '\n' + status.timeout;
       })
       .catch(err => console.error(err));
   };

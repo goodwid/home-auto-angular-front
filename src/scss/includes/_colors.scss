@@ -1,7 +1,7 @@
 $basic-color: blue;
 $background-color: lightblue;
 $header-background: lighten($background-color, 6%);
-$footer-background: darken($background-color, 15%);
+$footer-background: $background-color;
 $image-background: darken($header-background, 6%);
 $button-color: #b01520;
 

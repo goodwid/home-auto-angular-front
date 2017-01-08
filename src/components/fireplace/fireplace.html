@@ -1,11 +1,12 @@
 <h4>Fireplace controls</h4>
 <p>
-  <a ng-click="fp.on()">On</a>
-  <a ng-click="fp.off()">Off</a>
-  <a ng-click="fp.status()">Show Status</a>
+  <md-button class="md-raised" ng-click="fp.on()">On</md-button>
+  <md-button class="md-raised" ng-click="fp.off()">Off</md-button>
+  <md-button class="md-raised" ng-click="fp.status()">Show Status</md-button>
 </p>
-<a ng-click="fp.timer()">Set Timeout</a>
-<input id="slider" ng-model="fp.timeout" type="range" value="90">
+<md-button class="md-raised" ng-click="fp.timer()">Set Timeout</md-button>
 <input id="slider-display" ng-model="fp.timeout">
+<md-slider id="slider" ng-model="fp.timeout" aria-label="timeout" value="25" min="0" max="90"></md-slider>
+<!-- <input id="slider" ng-model="fp.timeout" type="range" value="90"> -->
 <br>
-<input id="fireplace-status-display" ng-model="fp.statusDisplay">&nbsp;</input>
+<textarea id="fireplace-status-display" ng-model="fp.statusDisplay">&nbsp;</textarea>
